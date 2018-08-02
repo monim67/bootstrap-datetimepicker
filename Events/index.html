@@ -23,7 +23,7 @@
 		<meta name="msapplication-TileColor" content="#2b5797">
 		<meta name="msapplication-TileImage" content="/mstile-144x144.png">
 
-        <title>Events - Bootstrap 3 Datepicker</title>
+        <title></title>
 
         <link rel="stylesheet" type="text/css" media="screen" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -40,6 +40,8 @@
 		<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 			<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>
 			<script src="//cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js"></script>
+			<script src="../search/require.js"></script>
+			<script src="../search/search.js"></script>
     </head>
 
     <body>
@@ -58,7 +60,7 @@
             </button>
 
             <!-- Main title -->
-            <a class="navbar-brand" href="..">Bootstrap 3 Datepicker</a>
+            <a class="navbar-brand" href=""></a>
         </div>
 
         <!-- Expanded navigation -->
@@ -68,61 +70,55 @@
             
             
                 <li >
-                    <a href="../Installing">Installing</a>
+                    <a href="..">Usage</a>
                 </li>
             
             
             
                 <li >
-                    <a href="../Functions">Functions</a>
+                    <a href="../Installing/">Installing</a>
                 </li>
             
             
             
                 <li >
-                    <a href="../Options">Options</a>
+                    <a href="../Functions/">Functions</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../Options/">Options</a>
                 </li>
             
             
             
                 <li class="active">
-                    <a href=".">Events</a>
+                    <a href="./">Events</a>
                 </li>
             
             
             
                 <li >
-                    <a href="../Changelog">Change Log</a>
+                    <a href="../Changelog/">Change Log</a>
                 </li>
             
             
             
                 <li >
-                    <a href="../ContributorsGuide">Dev Guide</a>
+                    <a href="../ContributorsGuide/">Dev Guide</a>
                 </li>
             
             
             
                 <li >
-                    <a href="../Extras">Extras</a>
+                    <a href="../Extras/">Extras</a>
                 </li>
             
             
             
                 <li >
-                    <a href="../FAQ">FAQs</a>
-                </li>
-            
-            
-            
-                <li >
-                    <a href="../Version 4 Changelog"></a>
-                </li>
-            
-            
-            
-                <li >
-                    <a href="../Version 4 Contributors guide"></a>
+                    <a href="../FAQ/">FAQs</a>
                 </li>
             
             
@@ -133,15 +129,6 @@
                 
 				
                 
-                <li>
-                    <a href="https://github.com/Eonasdan/bootstrap-datetimepicker">
-                        
-                            <i class="fa fa-github"></i>
-                        
-                        GitHub
-                    </a>
-                </li>
-                
             </ul>
         </div>
     </div>
@@ -149,96 +136,13 @@
 
         <div class="container">
 			<div class="row">
-				<div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+				<div class="col-md-3"><script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7DC5QN&placement=eonasdangithubio" id="_carbonads_js"></script>
+<div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-    
-        <li class="main active"><a href="#events">Events</a></li>
-        
-            <li><a href="#dphide">dp.hide</a></li>
-        
-            <li><a href="#dpshow">dp.show</a></li>
-        
-            <li><a href="#dpchange">dp.change</a></li>
-        
-            <li><a href="#dperror">dp.error</a></li>
-        
-            <li><a href="#dpupdate">dp.update</a></li>
-        
     
     </ul>
 </div></div>
 				<div class="col-md-9" role="main">
-
-<h2 id="events">Events</h2>
-<h3 id="dphide">dp.hide</h3>
-<p>Fired when the widget is hidden.</p>
-<p>Parameters:</p>
-<pre><code>e = {
-    date //the currently set date. Type: moment object (clone)
-}
-</code></pre>
-
-<p>Emitted from:</p>
-<ul>
-<li>toggle()</li>
-<li>hide()</li>
-<li>disable()</li>
-</ul>
-<hr />
-<h3 id="dpshow">dp.show</h3>
-<p>Fired when the widget is shown.</p>
-<p>Parameters:</p>
-<p>No parameters are include, listen to <code>dp.change</code> instead</p>
-<p>Emitted from:</p>
-<ul>
-<li>toggle()</li>
-<li>show()</li>
-</ul>
-<hr />
-<h3 id="dpchange">dp.change</h3>
-<p>Fired when the date is changed.</p>
-<p>Parameters:</p>
-<pre><code>e = {
-    date, //date the picker changed to. Type: moment object (clone)
-    oldDate //previous date. Type: moment object (clone) or false in the event of a null
-}
-</code></pre>
-
-<p>Emitted from:</p>
-<ul>
-<li>toggle() <strong>Note</strong>: Only fired when using <code>useCurrent</code></li>
-<li>show() <strong>Note</strong>: Only fired when using <code>useCurrent</code> or when or the date is changed to comply with date rules (min/max etc)</li>
-<li>date(newDate)</li>
-<li>minDate(minDate)</li>
-<li>maxDate(maxDate)</li>
-<li>daysOfWeekDisabled()</li>
-</ul>
-<hr />
-<h3 id="dperror">dp.error</h3>
-<p>Fired when a selected date fails to pass validation.</p>
-<p>Parameters:</p>
-<pre><code>e = {
-    date //the invalid date. Type: moment object (clone)
-}
-</code></pre>
-
-<p>Emmited from:</p>
-<ul>
-<li>minDate(minDate)</li>
-<li>maxDate(maxDate)</li>
-<li>daysOfWeekDisabled()</li>
-<li>setValue() <em>private function</em></li>
-</ul>
-<hr />
-<h3 id="dpupdate">dp.update</h3>
-<p><small>4.14.30</small></p>
-<p>Fired (in most cases) when the <code>viewDate</code> changes. E.g. Next and Previous buttons, selecting a year.</p>
-<p>Parameters:</p>
-<pre><code>e = {
-   change, //Change type as a momentjs format token. Type: string e.g. yyyy on year change
-   viewDate //new viewDate. Type: moment object
-}
-</code></pre>
 
 </div>
 			</div>

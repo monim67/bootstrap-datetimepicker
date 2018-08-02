@@ -23,7 +23,7 @@
 		<meta name="msapplication-TileColor" content="#2b5797">
 		<meta name="msapplication-TileImage" content="/mstile-144x144.png">
 
-        <title>Options - Bootstrap 3 Datepicker</title>
+        <title></title>
 
         <link rel="stylesheet" type="text/css" media="screen" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -40,6 +40,8 @@
 		<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 			<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>
 			<script src="//cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js"></script>
+			<script src="../search/require.js"></script>
+			<script src="../search/search.js"></script>
     </head>
 
     <body>
@@ -58,7 +60,7 @@
             </button>
 
             <!-- Main title -->
-            <a class="navbar-brand" href="..">Bootstrap 3 Datepicker</a>
+            <a class="navbar-brand" href=""></a>
         </div>
 
         <!-- Expanded navigation -->
@@ -68,61 +70,55 @@
             
             
                 <li >
-                    <a href="../Installing">Installing</a>
+                    <a href="..">Usage</a>
                 </li>
             
             
             
                 <li >
-                    <a href="../Functions">Functions</a>
+                    <a href="../Installing/">Installing</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../Functions/">Functions</a>
                 </li>
             
             
             
                 <li class="active">
-                    <a href=".">Options</a>
+                    <a href="./">Options</a>
                 </li>
             
             
             
                 <li >
-                    <a href="../Events">Events</a>
+                    <a href="../Events/">Events</a>
                 </li>
             
             
             
                 <li >
-                    <a href="../Changelog">Change Log</a>
+                    <a href="../Changelog/">Change Log</a>
                 </li>
             
             
             
                 <li >
-                    <a href="../ContributorsGuide">Dev Guide</a>
+                    <a href="../ContributorsGuide/">Dev Guide</a>
                 </li>
             
             
             
                 <li >
-                    <a href="../Extras">Extras</a>
+                    <a href="../Extras/">Extras</a>
                 </li>
             
             
             
                 <li >
-                    <a href="../FAQ">FAQs</a>
-                </li>
-            
-            
-            
-                <li >
-                    <a href="../Version 4 Changelog"></a>
-                </li>
-            
-            
-            
-                <li >
-                    <a href="../Version 4 Contributors guide"></a>
+                    <a href="../FAQ/">FAQs</a>
                 </li>
             
             
@@ -133,15 +129,6 @@
                 
 				
                 
-                <li>
-                    <a href="https://github.com/Eonasdan/bootstrap-datetimepicker">
-                        
-                            <i class="fa fa-github"></i>
-                        
-                        GitHub
-                    </a>
-                </li>
-                
             </ul>
         </div>
     </div>
@@ -149,411 +136,14 @@
 
         <div class="container">
 			<div class="row">
-				<div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+				<div class="col-md-3"><script async type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7DC5QN&placement=eonasdangithubio" id="_carbonads_js"></script>
+<div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-    
-        <li class="main active"><a href="#options">Options</a></li>
-        
-            <li><a href="#format">format</a></li>
-        
-            <li><a href="#dayviewheaderformat">dayViewHeaderFormat</a></li>
-        
-            <li><a href="#extraformats">extraFormats</a></li>
-        
-            <li><a href="#stepping">stepping</a></li>
-        
-            <li><a href="#mindate">minDate</a></li>
-        
-            <li><a href="#maxdate">maxDate</a></li>
-        
-            <li><a href="#usecurrent">useCurrent</a></li>
-        
-            <li><a href="#collapse">collapse</a></li>
-        
-            <li><a href="#locale">locale</a></li>
-        
-            <li><a href="#defaultdate">defaultDate</a></li>
-        
-            <li><a href="#disableddates">disabledDates</a></li>
-        
-            <li><a href="#enableddates">enabledDates</a></li>
-        
-            <li><a href="#icons">icons</a></li>
-        
-            <li><a href="#usestrict">useStrict</a></li>
-        
-            <li><a href="#sidebyside">sideBySide</a></li>
-        
-            <li><a href="#daysofweekdisabled">daysOfWeekDisabled</a></li>
-        
-            <li><a href="#calendarweeks">calendarWeeks</a></li>
-        
-            <li><a href="#viewmode">viewMode</a></li>
-        
-            <li><a href="#toolbarplacement">toolbarPlacement</a></li>
-        
-            <li><a href="#showtodaybutton">showTodayButton</a></li>
-        
-            <li><a href="#showclear">showClear</a></li>
-        
-            <li><a href="#showclose">showClose</a></li>
-        
-            <li><a href="#widgetpositioning">widgetPositioning</a></li>
-        
-            <li><a href="#widgetparent">widgetParent</a></li>
-        
-            <li><a href="#keepopen">keepOpen</a></li>
-        
-            <li><a href="#inline">inline</a></li>
-        
-            <li><a href="#keepinvalid">keepInvalid</a></li>
-        
-            <li><a href="#keybinds">keyBinds</a></li>
-        
-            <li><a href="#debug">debug</a></li>
-        
-            <li><a href="#ignorereadonly">ignoreReadonly</a></li>
-        
-            <li><a href="#disabledtimeintervals">disabledTimeIntervals</a></li>
-        
-            <li><a href="#allowinputtoggle">allowInputToggle</a></li>
-        
-            <li><a href="#focusonshow">focusOnShow</a></li>
-        
-            <li><a href="#enabledhours">enabledHours</a></li>
-        
-            <li><a href="#disabledhours">disabledHours</a></li>
-        
-            <li><a href="#viewdate">viewDate</a></li>
-        
-            <li><a href="#tooltips">tooltips</a></li>
-        
     
     </ul>
 </div></div>
 				<div class="col-md-9" role="main">
 
-<h2 id="options">Options</h2>
-<h3 id="format">format</h3>
-<pre><code>Default: false
-</code></pre>
-<p>See <a href="http://momentjs.com/docs/#/displaying/format/">momentjs' docs</a> for valid formats. Format also dictates what components are shown, e.g. <code>MM/dd/YYYY</code> will not display the time picker.</p>
-<hr />
-<h3 id="dayviewheaderformat">dayViewHeaderFormat</h3>
-<pre><code>Default: 'MMMM YYYY'
-</code></pre>
-<p>Changes the heading of the datepicker when in "days" view.</p>
-<p><img alt="Datepicker Header" src="../img/dpheader.png" /></p>
-<hr />
-<h3 id="extraformats">extraFormats</h3>
-<pre><code>Default: false
-</code></pre>
-<p>Allows for several input formats to be valid. See <a href="https://github.com/Eonasdan/bootstrap-datetimepicker/pull/666">this PR</a>.</p>
-<hr />
-<h3 id="stepping">stepping</h3>
-<pre><code>Default: 1
-</code></pre>
-<p>Number of minutes the up/down arrow's will move the minutes value in the time picker</p>
-<hr />
-<h3 id="mindate">minDate</h3>
-<pre><code>Default: false
-Accepts: date, moment, string
-</code></pre>
-<p>Prevents date/time selections before this date.</p>
-<h4 id="mindate-will-override-defaultdate-and-usecurrent-if-either-of-these-settings-are-the-same-day-since-both-options-are-invalid-according-to-the-rules-youve-selected"><code>minDate</code> will override <code>defaultDate</code> and <code>useCurrent</code> if either of these settings are the same day since both options are invalid according to the rules you've selected.</h4>
-<hr />
-<h3 id="maxdate">maxDate</h3>
-<pre><code>Default: false
-Accepts: date, moment, string
-</code></pre>
-<p>Prevents date/time selections after this date.</p>
-<h4 id="maxdate-will-override-defaultdate-and-usecurrent-if-either-of-these-settings-are-the-same-day-since-both-options-are-invalid-according-to-the-rules-youve-selected"><code>maxDate</code> will override <code>defaultDate</code> and <code>useCurrent</code> if either of these settings are the same day since both options are invalid according to the rules you've selected.</h4>
-<hr />
-<h3 id="usecurrent">useCurrent</h3>
-<pre><code>Default: true
-</code></pre>
-<p>On show, will set the picker to the current date/time</p>
-<hr />
-<h3 id="collapse">collapse</h3>
-<pre><code>Default: true
-</code></pre>
-<p>Using a Bootstraps collapse to switch between date/time pickers.</p>
-<hr />
-<h3 id="locale">locale</h3>
-<pre><code>Default: moment.locale()
-Accepts: string, moment.local('locale')
-</code></pre>
-<p>See <a href="https://github.com/moment/moment/tree/develop/locale">momentjs</a> for valid locales.</p>
-<p>You must include <code>moment-with-locales.js</code> or a local js file.</p>
-<hr />
-<h3 id="defaultdate">defaultDate</h3>
-<pre><code>Default: false
-Accepts: date, moment, string
-</code></pre>
-<p>Sets the picker default date/time. Overrides <code>useCurrent</code></p>
-<hr />
-<h3 id="disableddates">disabledDates</h3>
-<pre><code>Default: false
-Accepts: array of [date, moment, string]
-</code></pre>
-<p>Disables selection of dates in the array, e.g. holidays</p>
-<hr />
-<h3 id="enableddates">enabledDates</h3>
-<pre><code>Default: false
-Accepts: array of [date, moment, string]
-</code></pre>
-<p>Disables selection of dates <strong>NOT</strong> in the array, e.g. holidays</p>
-<hr />
-<h3 id="icons">icons</h3>
-<pre><code>Default: {
-            time: 'glyphicon glyphicon-time',
-            date: 'glyphicon glyphicon-calendar',
-            up: 'glyphicon glyphicon-chevron-up',
-            down: 'glyphicon glyphicon-chevron-down',
-            previous: 'glyphicon glyphicon-chevron-left',
-            next: 'glyphicon glyphicon-chevron-right',
-            today: 'glyphicon glyphicon-screenshot',
-            clear: 'glyphicon glyphicon-trash',
-            close: 'glyphicon glyphicon-remove'
-        }
-Accepts: object with all or some of the parameters above
-</code></pre>
-<p>Change the default icons for the pickers functions.</p>
-<h3 id="usestrict">useStrict</h3>
-<pre><code>Default: false
-</code></pre>
-<p>Defines if moment should use strict date parsing when considering a date to be valid</p>
-<hr />
-<h3 id="sidebyside">sideBySide</h3>
-<pre><code>Default: false
-</code></pre>
-<p>Shows the picker side by side when using the time and date together.</p>
-<p><img alt="SideBySide" src="../img/sideBySide.png" /></p>
-<hr />
-<h3 id="daysofweekdisabled">daysOfWeekDisabled</h3>
-<pre><code>Default: []
-Accepts: array of numbers from 0-6
-</code></pre>
-<p>Disables the section of days of the week, e.g. weekends.</p>
-<hr />
-<h3 id="calendarweeks">calendarWeeks</h3>
-<pre><code>Default: false
-</code></pre>
-<p>Shows the week of the year to the left of first day of the week.</p>
-<p><img alt="calendarWeek" src="../img/calendarWeeks.png" /></p>
-<hr />
-<h3 id="viewmode">viewMode</h3>
-<pre><code>Default: 'days'
-Accepts: 'decades','years','months','days'
-</code></pre>
-<p>The default view to display when the picker is shown.</p>
-<p><strong>Note</strong>: To limit the picker to selecting, for instance the year and month, use <code>format: MM/YYYY</code></p>
-<hr />
-<h3 id="toolbarplacement">toolbarPlacement</h3>
-<pre><code>Default: 'default'
-Accepts: 'default', 'top', 'bottom'
-</code></pre>
-<p>Changes the placement of the icon toolbar.</p>
-<p><img alt="toolbarPlacement" src="../img/toolbarPlacement.png" /></p>
-<hr />
-<h3 id="showtodaybutton">showTodayButton</h3>
-<pre><code>Default: false
-</code></pre>
-<p>Show the "Today" button in the icon toolbar.</p>
-<p>Clicking the "Today" button will set the calendar view and set the date to <code>now</code>.</p>
-<hr />
-<h3 id="showclear">showClear</h3>
-<pre><code>Default: false
-</code></pre>
-<p>Show the "Clear" button in the icon toolbar.</p>
-<p>Clicking the "Clear" button will set the calendar to null.</p>
-<hr />
-<h3 id="showclose">showClose</h3>
-<pre><code>Default: false
-</code></pre>
-<p>Show the "Close" button in the icon toolbar.</p>
-<p>Clicking the "Close" button will call <code>hide()</code></p>
-<hr />
-<h3 id="widgetpositioning">widgetPositioning</h3>
-<pre><code>Default: {
-            horizontal: 'auto'
-            vertical: 'auto'
-         }
-Accepts: object with the all or one of the parameters above
-         horizontal: 'auto', 'left', 'right'
-         vertical: 'auto', 'top', 'bottom'
-</code></pre>
-<h3 id="widgetparent">widgetParent</h3>
-<pre><code>Default: null
-Accepts: string or jQuery object
-</code></pre>
-<p>On picker show, places the widget at the identifier (string) or jQuery object <strong>if</strong> the element has css <code>position: 'relative'</code></p>
-<hr />
-<h3 id="keepopen">keepOpen</h3>
-<pre><code>Default: false
-</code></pre>
-<p>Will cause the date picker to stay open after selecting a date if no time components are being used.</p>
-<hr />
-<h3 id="inline">inline</h3>
-<pre><code>Default: false
-</code></pre>
-<p>Will display the picker inline without the need of a input field. This will also hide borders and shadows.</p>
-<hr />
-<h3 id="keepinvalid">keepInvalid</h3>
-<pre><code>Default: false
-</code></pre>
-<p>Will cause the date picker to <strong>not</strong> revert or overwrite invalid dates.</p>
-<hr />
-<h3 id="keybinds">keyBinds</h3>
-<pre><code>Default: up: function (widget) {
-            if (widget.find('.datepicker').is(':visible')) {
-                this.date(this.date().clone().subtract(7, 'd'));
-            } else {
-                this.date(this.date().clone().add(1, 'm'));
-            }
-        },
-        down: function (widget) {
-            if (!widget) {
-                this.show();
-            }
-            else if (widget.find('.datepicker').is(':visible')) {
-                this.date(this.date().clone().add(7, 'd'));
-            } else {
-                this.date(this.date().clone().subtract(1, 'm'));
-            }
-        },
-        'control up': function (widget) {
-            if (widget.find('.datepicker').is(':visible')) {
-                this.date(this.date().clone().subtract(1, 'y'));
-            } else {
-                this.date(this.date().clone().add(1, 'h'));
-            }
-        },
-        'control down': function (widget) {
-            if (widget.find('.datepicker').is(':visible')) {
-                this.date(this.date().clone().add(1, 'y'));
-            } else {
-                this.date(this.date().clone().subtract(1, 'h'));
-            }
-        },
-        left: function (widget) {
-            if (widget.find('.datepicker').is(':visible')) {
-                this.date(this.date().clone().subtract(1, 'd'));
-            }
-        },
-        right: function (widget) {
-            if (widget.find('.datepicker').is(':visible')) {
-                this.date(this.date().clone().add(1, 'd'));
-            }
-        },
-        pageUp: function (widget) {
-            if (widget.find('.datepicker').is(':visible')) {
-                this.date(this.date().clone().subtract(1, 'M'));
-            }
-        },
-        pageDown: function (widget) {
-            if (widget.find('.datepicker').is(':visible')) {
-                this.date(this.date().clone().add(1, 'M'));
-            }
-        },
-        enter: function () {
-            this.hide();
-        },
-        escape: function () {
-            this.hide();
-        },
-        'control space': function (widget) {
-            if (widget.find('.timepicker').is(':visible')) {
-                widget.find('.btn[data-action="togglePeriod"]').click();
-            }
-        },
-        t: function () {
-            this.date(moment());
-        },
-        'delete': function () {
-            this.clear();
-        }
-</code></pre>
-<p>Allows for custom events to fire on keyboard press.</p>
-<hr />
-<h3 id="debug">debug</h3>
-<p><small>4.7.14</small></p>
-<pre><code>Default: false
-</code></pre>
-<p>Will cause the date picker to stay open after a <code>blur</code> event.</p>
-<hr />
-<h3 id="ignorereadonly">ignoreReadonly</h3>
-<p><small>4.7.14</small></p>
-<pre><code>Default: false
-</code></pre>
-<p>Allow date picker show event to fire even when the associated input element has the <code>readonly="readonly"</code>property.</p>
-<hr />
-<h3 id="disabledtimeintervals">disabledTimeIntervals</h3>
-<p><small>4.14.30</small></p>
-<pre><code>Default: false
-</code></pre>
-<p>Disables time selection between the given <code>moments</code></p>
-<hr />
-<h3 id="allowinputtoggle">allowInputToggle</h3>
-<p><small>4.14.30</small></p>
-<pre><code>Default: false
-</code></pre>
-<p>If <code>true</code>, the picker will show on textbox focus and icon click when used in a button group</p>
-<hr />
-<h3 id="focusonshow">focusOnShow</h3>
-<p><small>4.14.30</small></p>
-<pre><code>Default: true
-</code></pre>
-<p>If <code>false</code>, the textbox will not be given focus when the picker is shown</p>
-<hr />
-<h3 id="enabledhours">enabledHours</h3>
-<p><small>4.14.30</small></p>
-<pre><code>Default: false
-</code></pre>
-<p>Will allow or disallow hour selections (much like <code>disabledTimeIntervals</code>) but will affect all days</p>
-<hr />
-<h3 id="disabledhours">disabledHours</h3>
-<p><small>4.14.30</small></p>
-<pre><code>Default: false
-</code></pre>
-<p>Will allow or disallow hour selections (much like <code>disabledTimeIntervals</code>) but will affect all days</p>
-<hr />
-<h3 id="viewdate">viewDate</h3>
-<p><small>4.14.30</small></p>
-<pre><code>Default: false
-</code></pre>
-<p>This will change the <code>viewDate</code> without changing or setting the selected date.</p>
-<hr />
-<h3 id="tooltips">tooltips</h3>
-<p><small>4.15.35</small></p>
-<pre><code>tooltips: {
-    today: 'Go to today',
-    clear: 'Clear selection',
-    close: 'Close the picker',
-    selectMonth: 'Select Month',
-    prevMonth: 'Previous Month',
-    nextMonth: 'Next Month',
-    selectYear: 'Select Year',
-    prevYear: 'Previous Year',
-    nextYear: 'Next Year',
-    selectDecade: 'Select Decade',
-    prevDecade: 'Previous Decade',
-    nextDecade: 'Next Decade',
-    prevCentury: 'Previous Century',
-    nextCentury: 'Next Century',
-    incrementHour: 'Increment Hour',
-    pickHour: 'Pick Hour',
-    decrementHour:'Decrement Hour',
-    incrementMinute: 'Increment Minute',
-    pickMinute: 'Pick Minute',
-    decrementMinute:'Decrement Minute',
-    incrementSecond: 'Increment Second',
-    pickSecond: 'Pick Second',
-    decrementSecond:'Decrement Second',
-}
-</code></pre>
-
-<p>This will change the <code>tooltips</code> over each icon to a custom string</p>
 </div>
 			</div>
         </div>
