@@ -1,5 +1,20 @@
-# Bootstrap 3 Date/Time Picker v4.17.47
+# Bootstrap 3/4 Date/Time Picker with clock-like Time-Picker
 
-We are in code freeze and this issue tracker is no longer actively monitored. I'll be closing PR that do not contribute emergency fixes and leaving some open as they are evaluated for migration into the new repo. I’ll be closing issues that do not meet minimum requirements or have been answered by the community. Issues that have been closed for longer than 30 days will be locked.
+This date-picker project is a fork of the famous [Eonasdan datetimepicker](https://github.com/Eonasdan/bootstrap-datetimepicker). A clock-like time-picker has been introduced into it and the widget is optimized to make it compatible to both Bootstrap 3 and 4 versions.
 
-## [View the manual and demos](http://eonasdan.github.io/bootstrap-datetimepicker/)
+![Clock-like time-picker for Bootstrap 4 and Bootstrap 3](https://i.imgur.com/1rFlX7o.png)
+
+## Demo
+
+ - [With Bootstrap 3](https://monim67.github.io/bootstrap-datetimepicker/)
+ - [With Bootstrap 4](https://monim67.github.io/bootstrap-datetimepicker/bootstrap4-demo.html)
+
+
+## Download
+
+ - [Download bootstrap-datetimepicker.zip](https://monim67.github.io/bootstrap-datetimepicker/bootstrap-datetimepicker.zip)
+
+
+## Usage
+
+The usage and configuration options are available on the [Eonasdan datetimepicker docs](http://eonasdan.github.io/bootstrap-datetimepicker/).
